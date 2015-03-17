@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>lightbox</title>
+		<link rel="stylesheet" type="text/css" href="_css/author.css">
+		<style type="text/css">
+
+			#lightbox {
+	border:solid 10px #ab2e37;
+	padding: 25px;
+	text-align: center;
+	width: 600px;
+	margin: auto;
+}
+#lightbox .images img {
+	width: 150px;
+	height: auto;
+
+}
+#lightbox .light, #lightbox .dark {
+	display: none;
+	position: fixed;
+	left:0px; top: 0px; bottom: 0px; right: 0px;
+
+	margin: auto;
+
+}
+#lightbox .light {
+	background-color: #fff;
+	width: 600px; height: 350px;
+	text-align: center;
+	padding: 15px;
+	border: solid 10px #ab2e37;
+}
+#lightbox .dark {
+	background-color: #000;
+	opacity: .7;
+}
+#lightbox .light img {
+	display: block;
+	margin: 0px 0px 15px;
+}
+
+
+		</style>
+
+
+
+	</head>
+	<body class="subpage">
+		<h1>The Lightbox</h1>
+		<div id="lightbox">
+			<div class="images">
+				<img src="_images/2-lightbox/lightbox01.jpg">
+				<img src="_images/2-lightbox/lightbox02.jpg">
+				<img src="_images/2-lightbox/lightbox3.jpg">
+				<img src="_images/2-lightbox/lightbox04.jpg">
+				<img src="_images/2-lightbox/lightbox5.jpg">
+				<img src="_images/2-lightbox/lightbox6.jpg">
+
+			
+			</div>
+			
+			<div class="dark"></div>
+			<div class="light">
+				<img src="_images/2-lightbox/lightbox1.jpg">
+				<button class="close">CLOSE</button>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="_js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="_js/author.js"></script>
+		<script type="text/javascript">
+			$(document).ready(lightbox_apply);
+
+			$('#mainmenu .lightbox').click(function(){
+
+	// ajax load
+	$('#theTarget').load('2-lightbox.html #lightbox', lightbox_apply);
+
+});
+
+
+function lightbox_apply(){
+
+	var lightbox = $('#lightbox');
+
+	lightbox.find('.images img').click(function(){
+		var theSrc = $(this).attr('src');
+		lightbox.find('.light img').attr('src',theSrc);
+		lightbox.find('.light').show();
+		lightbox.find('.dark').show();
+	});
+
+	lightbox.find('.dark, .light button').click(function(){
+		lightbox.find('.light').hide();
+		lightbox.find('.dark').hide();
+	});
+}
+
+
+	lightbox_apply();		
+}
+
+
+
+			
+		</script>
+	</body>
+</html>
