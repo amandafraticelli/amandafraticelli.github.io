@@ -2,6 +2,12 @@
 | Overall css
 --------------------------*/
 
+ #theTarget .animated {
+  transition-duration: 2s;
+
+}
+
+
 @import url(http://fonts.googleapis.com/css?family=Roboto:400);
 
 body { 

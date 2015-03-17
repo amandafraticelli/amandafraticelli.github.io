@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 
 });
-
+*/
 
 /*-------------------------
 | 2. Lightbox Load to The Hub
@@ -64,7 +64,7 @@ $(document).ready(function(){
 
 
 });
-
+*/
 
 
 /*-------------------------
@@ -98,7 +98,7 @@ $(document).ready(function(){
 
 });
 
-
+*/
 
 /*-------------------------
 | 4. Swap Load to The Hub
@@ -131,6 +131,8 @@ $(document).ready(function(){
 
 });
 
+*/
+
 /*-------------------------
 | 5. Tabbed Load to The Hub
 --------------------------*/
@@ -162,7 +164,7 @@ $(document).ready(function(){
 
 });
 
-
+*/
 
 
 
@@ -199,6 +201,48 @@ $('#mainmenu a:gt(0)').click(nav_link_click); //this is what makes everything wo
 
 
 
+
+/*
+var section = $ (this).attr('data-section');
+$(this).addClass('selected');
+
+var section = $(this).attr('data-section');
+
+if (section == 'slideshow')
+{
+
+$('#theTarget').css({'opacity':'0'}).load('1-slideshow.html #slideshow',function(){
+ slideshow_apply();
+ $('#theTarget').animate({'opacity':'1'},3000);
+ console.log('hello');
+});
+
+}
+else if (section == 'lightbox')
+{
+
+$('#theTarget').load('2-lightbox.html #lightbox', lightbox_apply);
+
+}
+else if (section == 'rollovers')
+{
+
+$('#theTarget').load('3-rollovers.html #rollovers', roll_apply);
+
+}
+else if (section == 'swap')
+{
+
+$('#theTarget').load('4-swap.html #swap', swap_apply);
+
+}
+else if (section == 'tabbed')
+{
+
+$('#theTarget').load('5-tabbed.html #tabbed', tab_apply);
+
+}
+*/
 
 /*-------------------------
 |
@@ -363,6 +407,72 @@ $(document).ready(function(){
 
 
 
+$(function(){
+
+	$('#theTarget').fadeOut('click', function() {
+
+	$(this).animate({
+		opacity:0.5,
+		paddingTop:'+=80'},1000, function() {
+			// $(this).remove();
+
+
+	});
+	});
+	});
+
+
+$(function(){
+
+	$('#theTarget').fadeIn('click', function() {
+
+	$(this).animate({
+		opacity:1.1,
+		paddingBottom:'+=80'},500, function() {
+			// $(this).remove();
+
+
+	});
+	});
+	});
+
+
+
+
+
+
+$(function(){
+
+	$('#mainmenu').fadeOut('click', function() {
+
+	$(this).animate({
+		opacity:0.5,
+		paddingTop:'+=20'},1000, function() {
+			// $(this).remove();
+
+
+	});
+	});
+	});
+
+
+$(function(){
+
+	$('#mainmenu').fadeIn('click', function() {
+
+	$(this).animate({
+		opacity:1.1,
+		paddingBottom:'+=1'},500, function() {
+			// $(this).remove();
+
+
+	});
+	});
+	});
+
+
+
+
 
 
 
@@ -394,6 +504,8 @@ $(document).ready(function(){
 /*-------------------------
 | 1. Slideshow Ajax
 --------------------------*/
+
+
 
 $('#mainmenu .slideshow').click(function(){
 
