@@ -2,10 +2,7 @@
 | Overall css
 --------------------------*/
 
- #theTarget .animated {
-  transition-duration: 2s;
 
-}
 
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400);
@@ -61,6 +58,12 @@ nav#mainmenu a.selected {
 	/*clicked tab color*/
 	background-color: #fac3c8;
 }
+
+
+
+
+
+
 
 
 /*pink desc*/
@@ -337,14 +340,17 @@ nav#mainmenu a.selected {
 #tabbed section.tab {
 	background-color: #fac3c8;
 	padding: 25px;
-	height: 150px;
-	margin-bottom: 15px;
+	height: 250px;
+	width: 600px;
+	margin-bottom: 25px;
 	border-radius: 10px;
+	text-align: left;
+	line-height: 19px;
 
 }
 #tabbed section.tab img {
 	float: left;
-	margin: 0px 10px 0px 0px;
+	margin: 39px 35px 42px 10px;
 
 
 }

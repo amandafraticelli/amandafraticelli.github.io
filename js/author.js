@@ -406,13 +406,25 @@ $(document).ready(function(){
 --------------------------*/
 
 
+/*-------------------------
+|
+| Transition Start
+|
+--------------------------*/
+
+
+/*-------------------------
+| Target Transition
+--------------------------*/
+
+
 
 $(function(){
 
 	$('#theTarget').fadeOut('click', function() {
 
 	$(this).animate({
-		opacity:0.5,
+		opacity:1.5,
 		paddingTop:'+=80'},1000, function() {
 			// $(this).remove();
 
@@ -438,7 +450,9 @@ $(function(){
 
 
 
-
+/*-------------------------
+| Button Transition
+--------------------------*/
 
 
 $(function(){
@@ -472,6 +486,19 @@ $(function(){
 
 
 
+
+
+
+
+
+
+
+
+/*-------------------------
+|
+| Transition End
+|
+--------------------------*/
 
 
 
