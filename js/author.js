@@ -197,6 +197,194 @@ $('#mainmenu a:gt(0)').click(nav_link_click); //this is what makes everything wo
 // load default
 	$('#theTarget').load('index.html #theTarget');
 
+
+
+
+/*-------------------------
+|
+| Aninmation Begin
+|
+--------------------------*/
+
+
+
+/*-------------------------
+| Bridge Button
+--------------------------*/
+
+$(document).ready(function(){
+    var state = 'down';
+
+
+    $(".slideshow").click(function(){
+      if(state =='down')
+      {
+        state ='up';
+        $(".slideshow").animate({'opacity':'.5'});
+        
+      }
+      else
+      {
+        state = 'down';
+        $(".slideshow").animate({'opacity':'1'});
+        
+      }
+
+      console.log(state);
+
+    });
+});
+
+
+
+/*-------------------------
+| Photoshop Button
+--------------------------*/
+
+
+$(document).ready(function(){
+    var state = 'down';
+
+
+    $(".lightbox").click(function(){
+      if(state =='down')
+      {
+        state ='up';
+        $(".lightbox").animate({'opacity':'.5'});
+        
+      }
+      else
+      {
+        state = 'down';
+        $(".lightbox").animate({'opacity':'1'});
+        
+      }
+
+      console.log(state);
+
+    });
+});
+
+
+/*-------------------------
+| Illustrator Button
+--------------------------*/
+
+
+
+$(document).ready(function(){
+    var state = 'down';
+
+
+    $(".rollovers").click(function(){
+      if(state =='down')
+      {
+        state ='up';
+        $(".rollovers").animate({'opacity':'.5'});
+        
+      }
+      else
+      {
+        state = 'down';
+        $(".rollovers").animate({'opacity':'1'});
+        
+      }
+
+      console.log(state);
+
+    });
+});
+
+
+
+/*-------------------------
+| InDesign Button
+--------------------------*/
+
+
+$(document).ready(function(){
+    var state = 'down';
+
+
+    $(".swap").click(function(){
+      if(state =='down')
+      {
+        state ='up';
+        $(".swap").animate({'opacity':'.5'});
+        
+      }
+      else
+      {
+        state = 'down';
+        $(".swap").animate({'opacity':'1'});
+        
+      }
+
+      console.log(state);
+
+    });
+});
+
+
+/*-------------------------
+| Contact Button
+--------------------------*/
+
+
+$(document).ready(function(){
+    var state = 'down';
+
+
+    $(".tabbed").click(function(){
+      if(state =='down')
+      {
+        state ='up';
+        $(".tabbed").animate({'opacity':'.5'});
+        
+      }
+      else
+      {
+        state = 'down';
+        $(".tabbed").animate({'opacity':'1'});
+        
+      }
+
+      console.log(state);
+
+    });
+});
+
+
+/*-------------------------
+|
+| Aninmation End
+|
+--------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------------
 |
 | SHARED FUNCTIONS
