@@ -425,7 +425,7 @@ $(function(){
 
 	$(this).animate({
 		opacity:5.1,
-		paddingTop:'+=80'},400, function() {
+		paddingTop:'+=80'},1000, function() {
 			// $(this).remove();
 
 
