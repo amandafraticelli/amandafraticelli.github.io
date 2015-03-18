@@ -421,11 +421,11 @@ $(document).ready(function(){
 
 $(function(){
 
-	$('#theTarget').fadeOut('click', function() {
+	$('#theTarget').hide().fadeIn();('click', function() {
 
 	$(this).animate({
-		opacity:1.5,
-		paddingTop:'+=80'},1000, function() {
+		opacity:5.1,
+		paddingTop:'+=80'},400, function() {
 			// $(this).remove();
 
 
@@ -433,7 +433,7 @@ $(function(){
 	});
 	});
 
-
+/*
 $(function(){
 
 	$('#theTarget').fadeIn('click', function() {
@@ -454,7 +454,7 @@ $(function(){
 | Button Transition
 --------------------------*/
 
-
+/*
 $(function(){
 
 	$('#mainmenu').fadeOut('click', function() {
@@ -468,15 +468,15 @@ $(function(){
 	});
 	});
 	});
-
+*/
 
 $(function(){
 
-	$('#mainmenu').fadeIn('click', function() {
+	$('#mainmenu').hide().slideDown();('click', function() {
 
 	$(this).animate({
-		opacity:1.1,
-		paddingBottom:'+=1'},500, function() {
+		opacity:0.1,
+		paddingBottom:'+=0'},900, function() {
 			// $(this).remove();
 
 
@@ -486,7 +486,57 @@ $(function(){
 
 
 
+/*-------------------------
+| Logo Transition
+--------------------------*/
 
+/*
+$(function(){
+
+	$('#logo').fadeOut('click', function() {
+
+	$(this).animate({
+		opacity:0.5,
+		paddingBottom:'+=0'},1000, function() {
+			// $(this).remove();
+
+
+	});
+	});
+	});
+
+
+
+$(function(){
+
+	$('#logo').fadeIn('click', function() {
+
+	$(this).animate({
+		opacity:5.1,
+		paddingBottom:'+=0'},1000, function() {
+			// $(this).remove();
+
+
+	});
+	});
+	});
+*/
+
+
+
+$(function(){
+
+	$('#logo').hide().slideDown();('click', function() {
+
+	$(this).animate({
+		opacity:1.1,
+		paddingTop:'+=10'},1000, function() {
+			// $(this).remove();
+
+
+	});
+	});
+	});
 
 
 
